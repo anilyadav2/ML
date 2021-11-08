@@ -55,6 +55,23 @@ print(len(wrong))
 print(format(Knn.score(data_test, target_test), ".2%"))
 
 
+from sklearn.metrics import confusion_matrix
+confusion= confusion_matrix(y_true=expected, y_pred=predicted)
+
+print(confusion)
+
+import pandas as pd
+import seaborn as sns
+import matplotlib.pyplot as plt2
+
+confusion_df= pd.DataFrame(confusion, index= range(10), columns=10)
+
+
+
+
+
+
+
 
 
 

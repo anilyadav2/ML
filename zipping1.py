@@ -8,3 +8,8 @@ for item in zip(list1,list2,list3):
     print(l2)
     print(l3)
 
+import pandas as pd
+from sklearn.datasets import toy_dataset
+digits = toy_dataset()
+print(digits)
+
